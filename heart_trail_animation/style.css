@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(49, 39, 38);
+  overflow: hidden;
+}
+.main__link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-flex;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  background-color: #9a0bf3;
+  border: solid 5px #310e45;
+  border-radius: 10px;
+  padding: 5px;
+  transition: background-color 250ms ease;
+}
+.main__link:hover,
+.main__link:focus {
+  background-color: #a0aaff;
+  border: solid 5px #141476;
+}
+/* ========================================================== */
+span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png");
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: animate 6000ms linear;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}

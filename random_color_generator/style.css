@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  background-color: #eaeaea;
+}
+.main__link {
+  display: inline-flex;
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  color: rgb(146, 130, 130);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+  transition: background-color 250ms ease;
+}
+.main__link:hover,
+.main__link:focus {
+  background-color: rgb(52, 43, 28);
+}
+/* ========================================================== */
+.main_title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.color_container {
+  background-color: #cacaca;
+  width: 300px;
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5);
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  transform: perspective(2000px) rotatey(0deg) rotatex(0deg);
+  transition: transform 0.2s ease;
+}
